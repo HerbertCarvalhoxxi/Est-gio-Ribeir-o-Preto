@@ -1,0 +1,33 @@
+function fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+function isInFibonacciSequence(num) {
+    let fibSequence = [];
+    let i = 0;
+    let fibNum = fibonacci(i);
+    
+    while (fibNum <= num) {
+        fibSequence.push(fibNum);
+        i++;
+        fibNum = fibonacci(i);
+    }
+
+    return fibSequence.includes(num);
+}
+
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Digite o número para verificar se está na sequência de Fibonacci: ', (num) => {
+    num = parseInt(num);
+    if (isInFibonacciSequence(num))
+        console.log(`${num} está na sequência de Fibonacci.`);
+    else
+        console.log(`${num} não está na sequência de Fibonacci.`);
+    rl.close();
+});

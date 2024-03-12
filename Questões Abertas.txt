@@ -1,0 +1,13 @@
+Questão 3 - 
+
+A) 9
+B) 128
+C) 49
+D) 100
+E) 13
+F) 33
+
+Questão 4 - Primeiro, acenderia dois interruptores de uma vez, sendo assim, eu descobriria com certeza
+uma das lâmpadas e qual seu interruptor, depois, desligaria um deles e verificaria a sala. Assim saberia
+visto que aquele que eu desliguei irá mostrar qual lâmpada corresponde ao mesmo. O interruptor que sobrou,
+estará ligado e apenas uma das lâmpadas estará acesa.
